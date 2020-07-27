@@ -18,7 +18,18 @@
 <main>
 <h2>Practice</h2>
 <pre>
-<!-- ここにプログラムを記述します -->
+<?php
+$news = file_get_contents('../../news_data/news.txt');
+$news = "2018-06-04 ニュースを追加しました\n" . $news;
+file_put_contents('../../news_data/news.txt', $news);
+
+print($news)
+
+// $s = $s . 'add';
+// $s .= 'add';
+
+// readfile('../../news_data/news.txt');
+?>
 </pre>
 </main>
 </body>

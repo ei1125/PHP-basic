@@ -18,7 +18,11 @@
 <main>
 <h2>Practice</h2>
 <pre>
-<!-- ここにプログラムを記述します -->
+<?php
+$date = sprintf('%04d年 %02d月 %02d日', 2018, 12, 5);
+print($date);
+?>
+
 </pre>
 </main>
 </body>

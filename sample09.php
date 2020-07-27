@@ -18,7 +18,19 @@
 <main>
 <h2>Practice</h2>
 <pre>
-<!-- ここにプログラムを記述します -->
+<?php
+$fruits = [
+  'apple'=>'りんご',
+  'grape'=>'ぶどう',
+  'lemon'=>'レモン',
+  'tomato'=>'トマト',
+  'peach'=>'もも'
+];
+
+foreach($fruits as $english => $japanese) {
+  print($english . ':' . $japanese . "\n");
+}
+?>
 </pre>
 </main>
 </body>

@@ -18,7 +18,18 @@
 <main>
 <h2>Practice</h2>
 <pre>
-<!-- ここにプログラムを記述します -->
+<?php
+$file = file_get_contents('https://h2o-space.com/feed/json/');
+// var_dump($file);
+$json = json_decode($file);
+// var_dump($json);
+foreach ($json->items as $item):
+?>
+・<a href="<?php print($item->url); ?>"><?php print
+($item->title); ?></a>
+<?php
+endforeach;
+?>
 </pre>
 </main>
 </body>
